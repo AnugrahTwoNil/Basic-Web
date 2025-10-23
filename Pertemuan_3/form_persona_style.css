@@ -136,6 +136,7 @@ input[type="submit"] {
         width: 100%;
         transition: all 0.3s ease;
         margin-top: 50px;
+        font-weight: bold;
 }
 input[type="submit"]:hover {
     background-color: #3598FD;

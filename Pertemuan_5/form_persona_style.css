@@ -38,7 +38,10 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 body {
-    background-color: #E7EDFB;
+    background-image: url(https://i.pinimg.com/1200x/fc/37/b6/fc37b6247386724a9ef3830162a744ad.jpg);
+/* background: #090979;
+background: linear-gradient(90deg, rgba(9, 9, 121, 1) 9%, rgba(0, 212, 255, 1) 100%); */
+background-size: cover;
 }
 
 .container {

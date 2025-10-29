@@ -1,4 +1,10 @@
 /* === General Reset === */
+
+        @media screen and (max-width: 430px) {
+         .container {
+         display: flex;
+         flex-direction: column;
+         } }
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +36,7 @@
 .Menu ul li a {
   margin: 10px;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #787878;
   transition: color 0.3s ease;
 }
 
@@ -38,14 +44,15 @@
   color: orange;
 }
 
-.Hubungi a {
+.Hubungi b {
   background-color: orange;
   color: white;
   border-radius: 10px;
   padding: 10px 15px;
+  transition: 0.3s ease;
 }
 
-.Hubungi a:hover {
+.Hubungi b:hover {
   background-color: #252462;
   color: white;
 }
@@ -183,13 +190,6 @@ p {
   width: 100%;
 }
 
-.LevelThreeText {
-  width: 100%;
-  text-align: center;
-  color: black;
-  font-weight: normal;
-  font-size: 18px;
-}
 
 /* === Section: Why Choose === */
 .LevelFour {
@@ -692,12 +692,16 @@ p {
   gap: 20px;
   padding: 50px 0;
   width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .Card1TKJ, .Card2TKJ, .Card3TKJ, .Card4TKJ{
   border-radius: 25px;
   padding: 30px;
   width: 300px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .modul1_title, .modul2_title, .modul3_title, .modul4_title{
@@ -786,11 +790,13 @@ p {
 
 .Website_RPL_Container {
   display: flex;
+  flex: 1;
   justify-content: center;
   gap: 20px;
   padding: 50px 0;
   width: 100%;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .Card1RPL, .Card2RPL, .Card3RPL, .Card4RPL {
@@ -828,7 +834,13 @@ p {
   padding: 8px 12px;
   color: white;
   text-align: center;
+  transition: 0.3s ease;
 }
+
+.website1:hover, .website2:hover, .website3:hover, .website4:hover {
+  background-color: #FF8C00;
+}
+
 
 
 .Card1RPL a.website1, .Card2RPL a.website2, .Card3RPL a.website3, .Card4RPL a.website4 {
@@ -838,6 +850,7 @@ p {
 /* SERITIFIKASI KOPETENSI SISWA */
 
 .Sertifikasi {
+  margin-top: 100px;
   text-align: center;
   font-size: small;
 }
@@ -982,4 +995,167 @@ p {
   color: #4b5563;
   font-size: small;
   margin-left: 100px;
+}
+
+/*  */
+@media screen and (max-width : 430px) {
+
+    .Navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .Menu ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .Hubungi {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+  .header-Text-Container {
+    flex-direction: column;
+    margin-left: 30px;
+    padding: 40px 10%;
+  }
+
+
+  .containerGallery {
+    padding: 0 10px;
+  }
+
+  .gambar {
+    width: 48%;
+  }
+  .Black1{
+    font-size: 20px;
+  }
+  .Tombol{
+    flex-direction: column;
+   text-align: center;
+  }
+  .Program_Sekolah{
+    max-width: 250px;
+  }
+  .WhatsApp{
+    max-width: 200px;
+  }
+    
+}
+@media screen and (max-width: 430px) {
+    .HeaderLevelTiga{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .Perusahaan {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+  .header-Text-Container {
+    padding: 20px 5%;
+  }
+
+  .gambar {
+    width: 100%;
+  }
+  .HeaderDescription{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .Card {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+    .videoDKV1_Container , .titleGalleryDKV {
+        flex-direction: column;
+        align-items: stretch;
+        margin: auto;
+        margin: 10px;
+    }
+    .videoDKV1  {
+        width: 100%;
+        margin-bottom: 10px;
+      
+    }
+
+    .Credit_Video1 {
+     margin-top: 20px;
+     margin-left: 10px;
+    }
+    .gallery{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .videoTKJ1_text {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    .TitleGalleryTKJ{
+        margin-left: 10px;
+    }
+ 
+    .videoTKJ1 {
+        margin-top: 0;
+        width: 390px;
+        margin-right: 10px;
+    }
+    .Credit_Video2{
+        margin-top: 30px;
+        margin-left:10px ;
+    }
+}
+@media screen and (max-width: 800px) {
+    .Sertifikasi_container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .Sertifikasi_Left, .Sertifikasi_Middle, .Sertifikasi_Right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media screen  and (max-width: 900px) {
+    .Daftar_container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .Daftar_left, .Daftar_right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}
+@media screen and (max-width: 430px) {
+    .karya_motion_grafis {
+        flex-direction: column;
+        width: 100%;
+    }
+    .Karya_motion_video {
+        flex-direction: column;
+        width: 100%;
+    }
+    .motion_grafis1, .motion_grafis2 {
+        width: 100%;}
+}
+@media screen and (max-width:430px) {
+    .Porofolio_rpl {
+        flex-direction: column;
+        width: 100%;
+    }
+    .fotorpl1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .Daftar_right {
+      margin-left: 40px;
+    }
 }

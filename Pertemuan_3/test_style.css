@@ -300,6 +300,7 @@ p {
   list-style: none;
   font-size: 13px;
   color: grey;
+  text-align: left;
 }
 .Card_Jurusan i{
   color: orange;
@@ -1022,7 +1023,7 @@ p {
 
 
   .containerGallery {
-    padding: 0 10px;
+    padding: 10px;
   }
 
   .gambar {
@@ -1065,9 +1066,8 @@ p {
     margin-right: 10px;
   }
 
-  .Card {
-    margin: 10px;
-  }
+  
+
 }
 @media screen and (max-width: 600px) {
     .videoDKV1_Container , .titleGalleryDKV {

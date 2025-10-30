@@ -442,7 +442,7 @@ p {
 /* VIDEODKV1 */
 
 .videoDKV1_Container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     gap: 40px;
@@ -1166,6 +1166,6 @@ p {
         width: 100%;
     }
     .Daftar_right {
-      margin-left: 30px;
+      margin-left: 34px;
     }
 }

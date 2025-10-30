@@ -95,6 +95,7 @@ background-size: cover;
 
 .input {
     color: gray;
+    margin-bottom: 15px;
 }
 
 .member {
@@ -114,6 +115,11 @@ background-size: cover;
   font-size: 14px;
   color: #333;
   border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.input input:focus {
+   border-color: #094DF8;
 }
 
 .checkbox {
@@ -140,4 +146,8 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-color: #3598FD;
+}
+
+.error {
+    font-size: 12px;
 }
